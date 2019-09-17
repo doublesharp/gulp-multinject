@@ -1,33 +1,33 @@
 {
   "name": "gulp-multinject",
   "description": "Inject scripts, stylesheets and more into templates and htmls, with support for namespaces",
-  "version": "0.1.0",
-  "homepage": "https://github.com/mariocasciaro/gulp-multinject",
+  "version": "0.1.1",
+  "homepage": "https://github.com/doublesharp/gulp-multinject",
   "author": {
     "name": "Mario Casciaro"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mariocasciaro/gulp-multinject"
+    "url": "git://github.com/doublesharp/gulp-multinject"
   },
   "bugs": {
-    "url": "https://github.com/mariocasciaro/gulp-multinject/issues"
+    "url": "https://github.com/doublesharp/gulp-multinject/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/mariocasciaro/gulp-multinject/blob/master/LICENSE"
+      "url": "https://github.com/doublesharp/gulp-multinject/blob/master/LICENSE"
     }
   ],
   "dependencies": {
-    "gulp-util": "~2.2.14",
-    "lodash": "~2.4.1",
-    "through2": "~0.4.1",
-    "minimatch": "~0.2.14"
+    "gulp-util": "~3.0.8",
+    "lodash": "^4.17.15",
+    "minimatch": "~3.0.4",
+    "through2": "~3.0.1"
   },
   "devDependencies": {
-    "chai": "~1.9.0",
-    "mocha": "~1.17.1"
+    "chai": "~4.2.0",
+    "mocha": "~6.2.0"
   },
   "scripts": {
     "test": "node_modules/mocha/bin/_mocha test/*.js --reporter spec"
