@@ -1,5 +1,5 @@
 var expect = require('chai').expect,
-  gutil = require('gulp-util'),
+  Vinyl = require('vinyl'),
   path = require('path'),
   fs = require('fs'),
   through = require('through2'),
@@ -8,7 +8,7 @@ var expect = require('chai').expect,
 
 function expected(file, base) {
   var filepath = path.resolve('test/expected', file);
-  return new gutil.File({
+  return new Vinyl({
     path: filepath,
     cwd: process.cwd(),
     base: base || 'test/expected',
@@ -18,7 +18,7 @@ function expected(file, base) {
 
 function fixture(file, base) {
   var filepath = path.join('test/fixtures', file);
-  return new gutil.File({
+  return new Vinyl({
     path: filepath,
     cwd: process.cwd(),
     base: base || 'test/fixtures',
